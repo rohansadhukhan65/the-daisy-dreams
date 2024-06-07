@@ -18,7 +18,7 @@ const MetaInfo = ({ children, title, description, metaImgUrl }: Iprops) => {
       <meta property="image" content={metaImgUrl} />
       <meta
         property="description"
-        content="The Daisy Dream is a passion project by software engineer Rohan Sadhukhan and Designer Priya mondal it is completely design by Priya mondal and Developed by Rohan Sadhukhan"
+        content={description}
       />
 
       <meta property="og:title" content={title} />
