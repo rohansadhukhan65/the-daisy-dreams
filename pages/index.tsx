@@ -1,5 +1,6 @@
 import ImageHeader from "@/components/ImageHeader/ImageHeader";
 import MetaInfo from "@/components/MetaInfo/MetaInfo";
+import RoomFacilites from "@/components/RoomFacilites/RoomFacilites";
 import dynamic from "next/dynamic";
 
 const NavBar = dynamic(() => import("../components/NavBar/NavBar"));
@@ -14,6 +15,7 @@ export default function Home() {
       />
       <NavBar pageRoute="/"/>
       <ImageHeader/>
+      <RoomFacilites/>
       <br />
       <br />
       <br />
