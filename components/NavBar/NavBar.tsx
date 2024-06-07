@@ -70,7 +70,7 @@ const NavBar = ({ pageRoute }: Iprops) => {
 
       {/* Mobile Nav */}
       <div
-        className={`w-full ${navbarColor} flex transition-all duration-500 fixed z-50  items-center gap-x-5 justify-around py-[25px]`}
+        className={`w-full ${navbarColor} flex transition-all duration-500 fixed z-50 lg:hidden  items-center gap-x-5 justify-around py-[25px]`}
       >
         <div
           onClick={() => {
