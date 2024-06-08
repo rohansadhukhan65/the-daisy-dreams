@@ -1,3 +1,4 @@
+import BookRooms from "@/components/BookRooms/BookRooms";
 import HomePageApluseOne from "@/components/HomePageApluseOne/HomePageApluseOne";
 import ImageHeader from "@/components/ImageHeader/ImageHeader";
 import MetaInfo from "@/components/MetaInfo/MetaInfo";
@@ -18,6 +19,7 @@ export default function Home() {
       <ImageHeader/>
       <HomePageApluseOne/>
       <RoomFacilites/>
+      <BookRooms/>
       <br />
       <br />
       <br />
