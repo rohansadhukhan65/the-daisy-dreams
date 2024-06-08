@@ -12,13 +12,7 @@ const Footer = () => {
         width={3000}
         alt=""
       />
-      <Image
-        src={"/footer-mobile.png"}
-        className="block lg:hidden  h-[131vh] w-full"
-        height={3000}
-        width={3000}
-        alt=""
-      />
+    
       {/* desktop */}
       <div className="absolute top-0 left-0  w-full hidden lg:block ">
         <div className="flex flex-col justify-center">
@@ -66,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Mobile */}
-      <div className="absolute top-0 left-0  w-full block lg:hidden">
+      <div className=" w-full block lg:hidden bg-cover bg-center bg-no-repeat" style={{backgroundImage:'url("/footer-mobile.png")'}}>
         <div className="flex flex-col justify-center">
           <div className="flex flex-col justify-evenly items-center my-10 py-10">
           <div className="text-white 1/3 p-4 flex flex-col justify-center items-center">
