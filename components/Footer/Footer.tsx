@@ -70,7 +70,7 @@ const Footer = () => {
                   The Daisy Dreams
                 </p>
               </div>
-              <p className="max-w-[494px]">
+              <p className="max-w-[494px] text-center">
                 Escape to a world of tranquility and charm at The Daisy Dreams.
                 Our boutique hotel offers a haven for relaxation and
                 rejuvenation, where every detail is designed to whisk you away
