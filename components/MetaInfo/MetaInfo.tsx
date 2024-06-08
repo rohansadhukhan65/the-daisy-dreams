@@ -14,13 +14,8 @@ const MetaInfo = ({ children, title, description, metaImgUrl }: Iprops) => {
 
       <meta property="title" content={title} />
       <meta property="type" content="website" />
-      <meta property="URL" content="https://the-daisy-dreams.vercel.app" />
-      <meta property="image" content={metaImgUrl} />
-      <meta
-        property="description"
-        content={description}
-      />
-
+      
+      <meta property="og:site_name" content="The Daisy Dreams"></meta>
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:URL" content="https://the-daisy-dreams.vercel.app" />

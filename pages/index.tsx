@@ -12,7 +12,7 @@ export default function Home() {
       <MetaInfo
         title="Home | The Daisy Dreams"
         description="The Daisy Dream is a passion project by software engineer Rohan Sadhukhan and Designer Priya mondal it is completely design by Priya mondal and Developed by Rohan Sadhukhan"
-        metaImgUrl="./icon.png"
+        metaImgUrl="/icon.png"
       />
       <NavBar pageRoute="/"/>
       <ImageHeader/>
