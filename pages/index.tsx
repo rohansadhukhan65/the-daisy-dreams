@@ -1,3 +1,4 @@
+import HomePageApluseOne from "@/components/HomePageApluseOne/HomePageApluseOne";
 import ImageHeader from "@/components/ImageHeader/ImageHeader";
 import MetaInfo from "@/components/MetaInfo/MetaInfo";
 import RoomFacilites from "@/components/RoomFacilites/RoomFacilites";
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <NavBar pageRoute="/"/>
       <ImageHeader/>
+      <HomePageApluseOne/>
       <RoomFacilites/>
       <br />
       <br />
