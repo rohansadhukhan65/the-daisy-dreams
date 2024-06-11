@@ -5,6 +5,7 @@ import { dot } from "node:test/reporters";
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { CoffieIcon, LeftArrowIcon, RightArrowIcon } from "../Icons";
+import { setFlagsFromString } from "node:v8";
 
 const ChooseTheBest = () => {
   const [currentCategory, changeCategory] = useState(0);
@@ -13,10 +14,18 @@ const ChooseTheBest = () => {
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    responsive :[
+        {
+            breakpoint: 768,
+            settings:{
+                slidesToShow : 1
+            }
+        }
+    ],
     prevArrow: (
       <>
         <button
@@ -44,13 +53,20 @@ const ChooseTheBest = () => {
   };
 
   useLayoutEffect(() => {
+
     category[currentCategory] !== "All"
       ? setFilteredRooms(
-          rooms.filter((room) => room.category === category[currentCategory])
+         rooms.filter((room) => room.category === category[currentCategory])
         )
       : setFilteredRooms(rooms);
   }, [currentCategory]);
 
+
+  useEffect(() => {
+    if (sliderRef.current) {
+        sliderRef.current.slickGoTo(0); // Reset slider to the first slide when data changes
+    }
+  }, [filteredRooms]);
 
   return (
     <div className="my-[54px]">
@@ -72,10 +88,10 @@ const ChooseTheBest = () => {
           </span>
         ))}
       </div>
-      <div className="px-10 mx-40">
+      <div className="px-10 max-w-[1000px] mx-auto">
         <Slider ref={sliderRef} {...settings}>
           {filteredRooms.map((r, k) => (
-            <div key={`${k}-${r.id}-${r.img}`}>
+            <div key={`${k}-${r.id}`}>
               <div className="p-5 mx-auto w-[20rem] shadow-lg my-10 rounded-lg border">
                 <Image src={r.img} height={300} width={300} alt="" className="mb-5" />
                 <p className="font-bold">{r.name}</p>

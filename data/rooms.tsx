@@ -42,7 +42,7 @@ const rooms : Irooms[] = [
     price: 2500,
   },
   {
-    id: 1,
+    id: 3,
     name: "Kohinoor Deluxe Suites",
     img: "/rooms/kohinoor-deluxe-suites.png",
     description:
