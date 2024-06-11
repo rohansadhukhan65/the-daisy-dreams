@@ -1,4 +1,5 @@
 import BookRooms from "@/components/BookRooms/BookRooms";
+import ChooseTheBest from "@/components/ChooseTheBest/ChooseTheBest";
 import Footer from "@/components/Footer/Footer";
 import HomePageApluseOne from "@/components/HomePageApluseOne/HomePageApluseOne";
 import ImageHeader from "@/components/ImageHeader/ImageHeader";
@@ -19,10 +20,10 @@ export default function Home() {
       <NavBar pageRoute="/"/>
       <ImageHeader/>
       <HomePageApluseOne/>
+      <ChooseTheBest/>
       <RoomFacilites/>
       <BookRooms/>
       <Footer/>
-  
     </>
   );
 }

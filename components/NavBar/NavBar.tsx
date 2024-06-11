@@ -32,9 +32,6 @@ const NavBar = ({ pageRoute }: Iprops) => {
         className={`w-full ${navbarColor} hidden transition-all duration-500 fixed z-50 lg:flex items-center gap-x-10 justify-around py-[23px] px-[81px]`}
       >
         <div className="flex 1/3 gap-x-10">
-          <div className="font-medium text-white text-[20px] cursor-pointer">
-            Resturants
-          </div>
           <div
             className={` ${
               pageRoute == "/" && "border-b-[5px] border-white rounded-sm"
@@ -43,11 +40,15 @@ const NavBar = ({ pageRoute }: Iprops) => {
             Home
           </div>
           <div className="font-medium text-white text-[20px] cursor-pointer">
+            Resturants
+          </div>
+
+          <div className="font-medium text-white text-[20px] cursor-pointer">
             Room
           </div>
-          <div className="font-medium text-white text-[20px] cursor-pointer">
+          {/* <div className="font-medium text-white text-[20px] cursor-pointer">
             Spa
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col gap-y-3 justify-center items-center 1/3">
           <Image src={"/icon.png"} height={50} width={50} alt="" />
@@ -98,9 +99,11 @@ const NavBar = ({ pageRoute }: Iprops) => {
           mobileNavOpen ? "w-[100%]" : "w-[0%]"
         }`}
       >
-        <div className={`${
-          mobileNavOpen ? "opacity-100" : "opacity-0"
-        } transition-all duration-200 flex flex-col relative justify-center items-center gap-y-5 h-full`}>
+        <div
+          className={`${
+            mobileNavOpen ? "opacity-100" : "opacity-0"
+          } transition-all duration-200 flex flex-col relative justify-center items-center gap-y-5 h-full`}
+        >
           <button
             onClick={() => {
               setMobileNavOpen((p) => !p);

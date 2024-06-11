@@ -3,7 +3,7 @@ import React from 'react'
 
 const HomePageApluseOne = () => {
   return (
-    <div className='mt-[54px] flex flex-col-reverse lg:flex-row mx-[48px] justify-around items-center'>
+    <div className='my-[54px] flex flex-col-reverse lg:flex-row mx-[48px] justify-around items-center'>
       <div className='1/2 text-center md:text-left'>
         <p className='max-w-[542px] my-5 text-center md:text-left text-[14px] md:text-[20px]'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
